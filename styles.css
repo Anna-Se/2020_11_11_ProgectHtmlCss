@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box
+}
+body{
+    background-color:white;
+    max-width: 1600px;
+    max-height: 3840px;
+    margin-left: 150px;
+    padding: 10px;
+}
+.aside{
+    width: 150px;
+    background-color: #282d32;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+/* .logo > p{
+    margin-top: 53px;
+    font-size: 32px;
+    color: #4cd480;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    word-wrap: break-word;
+}
+.logo > p:after {
+    display: block;
+    content: "";
+    width: 25px;
+    height: 4px;
+    background: #4cd480;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
