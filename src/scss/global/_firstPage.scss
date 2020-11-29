@@ -1,0 +1,31 @@
+.content__item-firstPage {
+    padding: 14.2% 20vh;
+    @media (max-width: 1350px) {
+        padding: 10% 7vh;       
+    }
+
+    .subtitle{
+        padding: 46px 0 18px 0;
+    }
+}
+    .title {
+        position: relative;
+    }
+    .title:before {
+        background: #4cb480;
+        top: -27px;
+        content: "";
+        display: block;
+        height: 4px;
+        position: absolute;
+        width: 62px;
+    }
+.h1__text {
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: left;
+    padding-bottom: 47px;
+}

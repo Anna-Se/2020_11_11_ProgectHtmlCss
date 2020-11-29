@@ -1,0 +1,16 @@
+.main__content {
+    grid-area: main__content;
+    display: flex;
+    flex-direction: column;
+    
+    &>.content__item-darck,
+    &>.content__item {
+        padding: 5.5vh 8.2% 2.76vh 8.2%;
+    }
+    .content__item-darck {
+        background-color: #353a3f;
+    }
+}
+.footer {
+    background: #353a3f;
+}
