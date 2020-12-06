@@ -1,6 +1,7 @@
 h1 {
     color: #ffffff;
-    font-family: "Poppins - Semi Bold";
+    font-family: 'Poppins';
+    letter-spacing: 0.05em;
     font-size: 62px;
     line-height: 1.0;
     text-align: left;
@@ -9,9 +10,18 @@ h1 {
 }
 h2 {
     color: #ffffff;
-    font-family: Poppins;
+    font-family: 'Poppins';
+    letter-spacing: 0.05em;
     font-size: 30px;
     line-height: 31.2px;
     text-align: left;
+    text-transform: uppercase;
+}
+h3 {
+    color: #353a3f;
+    font-family: 'Poppins';
+    letter-spacing: 0.05em;
+    font-size: 30px;
+    line-height: 40px;
     text-transform: uppercase;
 }
