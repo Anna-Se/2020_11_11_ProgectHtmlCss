@@ -1,0 +1,25 @@
+.content__item-thirdPage {
+    position: relative;
+
+
+    &.content__item-marks {
+        display: block;
+        font-family: "Poppins";
+    
+        &_large>p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            // margin-right: -50%;
+            transform: translate(-50%, -50%);
+            height: 300px;
+            color: #ffffff;
+            opacity: 0.03;
+        }
+        &_small>p {
+            height: 6.5%;
+            color: #4cb480;
+            letter-spacing: 3px;
+        }
+    }
+}
