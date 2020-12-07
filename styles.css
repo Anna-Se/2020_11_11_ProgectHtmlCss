@@ -213,7 +213,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 5%; }
-  .content__item-secondPage, .content__item-secondPage__last {
+  .content__item-secondPage, .content__item-secondPage {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -222,9 +222,9 @@ body {
     border-radius: 6px;
     background-color: #f6f6f6;
     padding: 8% 5% 5% 5%; }
-    .content__item-secondPage__last, .content__item-secondPage__last__last {
+    .content__item-secondPage:last-child, .content__item-secondPage:last-child {
       margin-right: 0; }
-    .content__item-secondPage--img, .content__item-secondPage__last--img {
+    .content__item-secondPage--img, .content__item-secondPage--img {
       display: block;
       width: 110px;
       height: 110px;
@@ -232,15 +232,16 @@ body {
       border-radius: 50%;
       position: absolute;
       transform: translateY(-140%); }
-      .content__item-secondPage--img > svg, .content__item-secondPage__last--img > svg {
+      .content__item-secondPage--img > svg, .content__item-secondPage--img > svg {
         fill: #4cb480;
         position: absolute;
         top: 50%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
-        height: 40px; }
-    .content__item-secondPage--text, .content__item-secondPage__last--text {
+        height: 40px;
+        width: 40px; }
+    .content__item-secondPage--text, .content__item-secondPage--text {
       padding: 15px 0px 30px 0px;
       color: #5a5f65;
       font-family: Poppins;
@@ -265,6 +266,27 @@ body {
       height: 6.5%;
       color: #4cb480;
       letter-spacing: 3px; }
+
+.conteiner {
+  border: 1px solid;
+  max-width: 700px;
+  margin: auto;
+  margin: 20px; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.col {
+  border: 1px solid;
+  flex: 1 1 150px;
+  min-height: 100px;
+  padding: 10px;
+  margin: 15px; }
+  .col:nth-child(2n+1) {
+    background-color: yellow; }
 
 .social-icon {
   display: flex;

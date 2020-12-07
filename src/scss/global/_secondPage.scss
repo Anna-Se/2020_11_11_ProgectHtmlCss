@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 5%;
-    &-secondPage, &-secondPage__last {
+    &-secondPage, &-secondPage {
         display: flex;
         position: relative;
         flex-direction: column;
@@ -11,7 +11,7 @@
         border-radius: 6px;
         background-color: #f6f6f6;
         padding: 8% 5% 5% 5%;
-        &__last{
+        &:last-child {
             margin-right: 0;
         }
         &--img {
@@ -30,6 +30,7 @@
                 margin-right: -50%;
                 transform: translate(-50%, -50%);
                 height: 40px;
+                width: 40px;
             }
         }
         &--text {
