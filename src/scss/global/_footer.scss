@@ -1,7 +1,6 @@
 .footer-wrap {
     margin: -2em 3em 6em 3.5em;
     display: grid;
-    
     grid-template-areas: 
     "nav icons"
     "copywrite icons";
@@ -11,7 +10,7 @@
     margin: -1.7em 0 0 0em;
     opacity: 0.3;
     color: #ffffff;
-    font-family: 'Poppins';
+    // font-family: 'Poppins';
     font-size: 16px;
     line-height: 30px;
 }
@@ -20,7 +19,7 @@
 }
 .social-icon {
     grid-area: icons;
-    display: flex;
+    // display: flex;
     // align-items: row;
     // justify-content: center;
     // align-content: center;

@@ -279,7 +279,6 @@ body {
 
 .content__item--title-blog {
   color: #353a3f;
-  font-family: "Poppins";
   font-size: 44px;
   line-height: 31.2px;
   text-transform: uppercase;
@@ -322,7 +321,6 @@ body {
       width: 176px; }
   .content__item--blog-text {
     color: #5a5f65;
-    font-family: "Poppins";
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.20px;
@@ -338,7 +336,6 @@ body {
   margin: -1.7em 0 0 0em;
   opacity: 0.3;
   color: #ffffff;
-  font-family: 'Poppins';
   font-size: 16px;
   line-height: 30px; }
 
@@ -346,8 +343,7 @@ body {
   grid-area: nav; }
 
 .social-icon {
-  grid-area: icons;
-  display: flex; }
+  grid-area: icons; }
   .social-icon > ul > li {
     height: 30px;
     width: 30px;
