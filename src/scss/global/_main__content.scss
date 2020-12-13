@@ -1,11 +1,11 @@
 .main__content {
     grid-area: main__content;
-    display: flex;
+    // display: flex;
     flex-direction: column;
     
     &>.content__item-darck,
     &>.content__item, .footer {
-        padding: 5.5vh 8.2% 3.7vh 8.2%;
+        padding: 4.4em 4.2em 2.8em 4.2em;
     }
     .content__item-darck {
         background-color: #353a3f;

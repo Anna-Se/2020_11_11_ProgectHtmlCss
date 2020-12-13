@@ -1,18 +1,24 @@
 .content__item {
     display: flex;
     justify-content: space-between;
-    padding-top: 5%;
-    &-secondPage, &-secondPage {
+    // padding-top: 5%;
+    &-secondPage {
         display: flex;
         position: relative;
         flex-direction: column;
         align-items: center;
-        margin: 3% 5% 5.5% 0;
+        // margin: 3% 5% 5.5% 0;
         border-radius: 6px;
         background-color: #f6f6f6;
-        padding: 8% 5% 5% 5%;
+        padding: 6.2em 3.2em 3.5em 3.2em;
+        &:not(:first-child), &:not(:last-child) {
+            margin: 3em 1.5em 5em 2em;
+        }
         &:last-child {
-            margin-right: 0;
+            margin-right: 3.4em;
+        }
+        &:first-child {
+            margin-left: 3.4em;
         }
         &--img {
             display: block;
@@ -34,7 +40,7 @@
             }
         }
         &--text {
-            padding: 15px 0px 30px 0px;
+            padding: 0.8em 0 1.7em 0;
             color: #5a5f65;
             font-family: Poppins;
             font-size: 18px;

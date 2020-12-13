@@ -1,26 +1,64 @@
 .content__item-thirdPage {
     position: relative;
-
-
-    &.content__item-marks {
-        display: block;
-        font-family: "Poppins";
-    
-        &_large>p {
+    margin: 8.3em 17em 4em 16em;
+    // background-image: url(/img/2-layers.png) repeat-y;
+    &--words {
+        color: #ffffff;
+        font-size: 28px;
+        font-style: italic;
+        line-height: 38.02px;
+        letter-spacing: 0.25px; 
+    }
+    &--author {
+        width: 234px;
+        height: 42px;
+        color: #8c9198;
+        font-family: Poppins;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        padding: 3.9em 0 3em 0;
+        position: relative;
+        &::before {
+            background:#8c9198;
+            top: 54px;
+            content: "";
+            display: block;
+            height: 5px;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            // margin-right: -50%;
-            transform: translate(-50%, -50%);
-            height: 300px;
-            color: #ffffff;
-            opacity: 0.03;
-        }
-        
-        &_small>p {
-            height: 6.5%;
-            color: #4cb480;
-            letter-spacing: 3px;
+            width: 60px;
         }
     }
 }
+
+    // .content__item-marks {
+    //     display: block;
+    //     // font-family: "Poppins";
+    //     &_small>p {
+    //         display: block;
+    //         top: 50%;
+    //         left: 50%;
+    //         margin-right: -50%;
+    //         transform: translate(-50%, -50%);
+    //         height: 20px;
+    //         color: #ffffff;
+    //         opacity: 0.03;
+    //         height: 30px;
+    //         color: #4cb480;
+    //         letter-spacing: 3px;
+    //     }
+    //     &_large {
+    //         // display: block;
+    //         // top: 50%;
+    //         // left: 50%;
+    //         // margin-right: -50%;
+    //         // transform: translate(-50%, -50%);
+    //         // height: 20px;
+    //         // color: #ffffff;
+    //         // opacity: 0.03;
+    //         position: absolute;
+    //         height: 130px;
+    //         color: white;
+    //         letter-spacing: 3px;
+    //         z-index: 1;
+    //     }
+    // }

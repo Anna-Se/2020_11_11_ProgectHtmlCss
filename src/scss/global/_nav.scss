@@ -39,13 +39,14 @@
       &::after {
       display: none;
       }
+      // padding: 8px 12px 0 58px;
     }
     &__list {
 
       @at-root .nav--footer & {
         display: flex;
         justify-content: space-between;
-        width: 50%;
+        width: 45%;
         & li {
           padding: 0;
         }

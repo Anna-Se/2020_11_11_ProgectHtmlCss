@@ -1,27 +1,57 @@
-$gutter:15px;
-.conteiner {
-    border: 1px solid;
-    max-width: 700px;
-    margin: auto;
-    margin: 20px;
+.content__item--title-blog {
+    color: #353a3f;
+    font-family: "Poppins";
+    font-size: 44px;
+    line-height: 31.2px;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    position: relative;
+    margin-bottom: 1.8em;
+    &::before {
+        background: #4cb480;
+        top: -35px;
+        content: "";
+        display: block;
+        height: 4px;
+        position: absolute;
+        width: 62px;
+        left: 3px;
+    }
 }
-.row {
+.content__item--blog-wrap {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin-left: -$gutter;
-    margin-right: -$gutter;
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax (240px, 1fr));
-    // gap: 15px;
-    
+    padding: 5.2em 2em 0.8em 3.2em;
 }
-.col {
-    border: 1px solid;
-    flex: 1 1 150px;
-    min-height: 100px;
-    padding: 10px;
-    margin: $gutter;
-    &:nth-child(2n+1) {
-        background-color: yellow;
+.content__item--blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2em 3.9em 0;
+    &-img {
+        width: 35.5em;
+        height: 20.5em;
+        border-radius: 6px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @media (max-width: 799px) {
+        flex-direction: column;
+    }
+    &-comment {
+        margin: 2.2em 0 1.9em 5em;
+        .button_small {
+            width: 176px;
+        }
+    }
+    &-text {
+        color: #5a5f65;
+        font-family: "Poppins";
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.20px;
+        padding: 0.8em 0em 1.5em 0;
     }
 }

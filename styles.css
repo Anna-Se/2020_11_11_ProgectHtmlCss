@@ -50,7 +50,7 @@ table {
   min-height: 100vh;
   display: grid;
   max-width: 1600px;
-  margin: auto;
+  margin: 0;
   grid-template-rows: 1fr;
   grid-template-columns: 150px 1fr;
   justify-content: space-between;
@@ -138,7 +138,7 @@ body {
   .nav--footer .nav__list {
     display: flex;
     justify-content: space-between;
-    width: 50%; }
+    width: 45%; }
     .nav--footer .nav__list li {
       padding: 0; }
   .nav__list li {
@@ -169,11 +169,10 @@ body {
 
 .main__content {
   grid-area: main__content;
-  display: flex;
   flex-direction: column; }
   .main__content > .content__item-darck,
   .main__content > .content__item, .main__content .footer {
-    padding: 5.5vh 8.2% 3.7vh 8.2%; }
+    padding: 4.4em 4.2em 2.8em 4.2em; }
   .main__content .content__item-darck {
     background-color: #353a3f; }
 
@@ -181,7 +180,7 @@ body {
   background: #353a3f; }
 
 .content__item-firstPage {
-  padding: 12% 13.5vh; }
+  padding: 10em 14em 9.6em 16em; }
   @media (max-width: 1350px) {
     .content__item-firstPage {
       padding: 10% 7vh; } }
@@ -211,20 +210,22 @@ body {
 
 .content__item {
   display: flex;
-  justify-content: space-between;
-  padding-top: 5%; }
-  .content__item-secondPage, .content__item-secondPage {
+  justify-content: space-between; }
+  .content__item-secondPage {
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
-    margin: 3% 5% 5.5% 0;
     border-radius: 6px;
     background-color: #f6f6f6;
-    padding: 8% 5% 5% 5%; }
-    .content__item-secondPage:last-child, .content__item-secondPage:last-child {
-      margin-right: 0; }
-    .content__item-secondPage--img, .content__item-secondPage--img {
+    padding: 6.2em 3.2em 3.5em 3.2em; }
+    .content__item-secondPage:not(:first-child), .content__item-secondPage:not(:last-child) {
+      margin: 3em 1.5em 5em 2em; }
+    .content__item-secondPage:last-child {
+      margin-right: 3.4em; }
+    .content__item-secondPage:first-child {
+      margin-left: 3.4em; }
+    .content__item-secondPage--img {
       display: block;
       width: 110px;
       height: 110px;
@@ -232,7 +233,7 @@ body {
       border-radius: 50%;
       position: absolute;
       transform: translateY(-140%); }
-      .content__item-secondPage--img > svg, .content__item-secondPage--img > svg {
+      .content__item-secondPage--img > svg {
         fill: #4cb480;
         position: absolute;
         top: 50%;
@@ -241,8 +242,8 @@ body {
         transform: translate(-50%, -50%);
         height: 40px;
         width: 40px; }
-    .content__item-secondPage--text, .content__item-secondPage--text {
-      padding: 15px 0px 30px 0px;
+    .content__item-secondPage--text {
+      padding: 0.8em 0 1.7em 0;
       color: #5a5f65;
       font-family: Poppins;
       font-size: 18px;
@@ -250,50 +251,106 @@ body {
       text-align: center; }
 
 .content__item-thirdPage {
-  position: relative; }
-  .content__item-thirdPage.content__item-marks {
-    display: block;
-    font-family: "Poppins"; }
-    .content__item-thirdPage.content__item-marks_large > p {
+  position: relative;
+  margin: 8.3em 17em 4em 16em; }
+  .content__item-thirdPage--words {
+    color: #ffffff;
+    font-size: 28px;
+    font-style: italic;
+    line-height: 38.02px;
+    letter-spacing: 0.25px; }
+  .content__item-thirdPage--author {
+    width: 234px;
+    height: 42px;
+    color: #8c9198;
+    font-family: Poppins;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    padding: 3.9em 0 3em 0;
+    position: relative; }
+    .content__item-thirdPage--author::before {
+      background: #8c9198;
+      top: 54px;
+      content: "";
+      display: block;
+      height: 5px;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 300px;
-      color: #ffffff;
-      opacity: 0.03; }
-    .content__item-thirdPage.content__item-marks_small > p {
-      height: 6.5%;
-      color: #4cb480;
-      letter-spacing: 3px; }
+      width: 60px; }
 
-.conteiner {
-  border: 1px solid;
-  max-width: 700px;
-  margin: auto;
-  margin: 20px; }
+.content__item--title-blog {
+  color: #353a3f;
+  font-family: "Poppins";
+  font-size: 44px;
+  line-height: 31.2px;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  position: relative;
+  margin-bottom: 1.8em; }
+  .content__item--title-blog::before {
+    background: #4cb480;
+    top: -35px;
+    content: "";
+    display: block;
+    height: 4px;
+    position: absolute;
+    width: 62px;
+    left: 3px; }
 
-.row {
+.content__item--blog-wrap {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px; }
+  padding: 5.2em 2em 0.8em 3.2em; }
 
-.col {
-  border: 1px solid;
-  flex: 1 1 150px;
-  min-height: 100px;
-  padding: 10px;
-  margin: 15px; }
-  .col:nth-child(2n+1) {
-    background-color: yellow; }
+.content__item--blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 2em 3.9em 0; }
+  .content__item--blog-img {
+    width: 35.5em;
+    height: 20.5em;
+    border-radius: 6px; }
+    .content__item--blog-img:last-child {
+      margin-bottom: 0; }
+  @media (max-width: 799px) {
+    .content__item--blog {
+      flex-direction: column; } }
+  .content__item--blog-comment {
+    margin: 2.2em 0 1.9em 5em; }
+    .content__item--blog-comment .button_small {
+      width: 176px; }
+  .content__item--blog-text {
+    color: #5a5f65;
+    font-family: "Poppins";
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.20px;
+    padding: 0.8em 0em 1.5em 0; }
+
+.footer-wrap {
+  margin: -2em 3em 6em 3.5em;
+  display: grid;
+  grid-template-areas: "nav icons" "copywrite icons"; }
+
+.footer-copywrite {
+  grid-area: copywrite;
+  margin: -1.7em 0 0 0em;
+  opacity: 0.3;
+  color: #ffffff;
+  font-family: 'Poppins';
+  font-size: 16px;
+  line-height: 30px; }
+
+.footer-nav {
+  grid-area: nav; }
 
 .social-icon {
-  display: flex;
-  justify-content: center;
-  align-content: center; }
-  .social-icon__list-item > svg {
+  grid-area: icons;
+  display: flex; }
+  .social-icon > ul > li {
     height: 30px;
+    width: 30px;
     color: #ffffff;
     opacity: 0.3; }
 
