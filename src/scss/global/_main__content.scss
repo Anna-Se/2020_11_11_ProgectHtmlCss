@@ -1,16 +1,21 @@
 .main__content {
-    grid-area: main__content;
-    // display: flex;
     flex-direction: column;
-    
-    &>.content__item-darck,
-    &>.content__item, .footer {
+    grid-area: main__content;
+    &>.content__item-darck {
         padding: 4.4em 4.2em 2.8em 4.2em;
+        @media (max-width: 799px) {
+            padding: 7vh;  
+        }
     }
-    .content__item-darck {
+    &>.content__item, .footer {
+        padding: 4.6em 3.9em 2.8em 3.9em;
+    }
+    @media (max-width: 799px) {
+        &>.content__item {
+            padding: 7vh;
+        }  
+    }
+    .content__item-darck, .footer {
         background-color: #353a3f;
-    }
-}
-.footer {
-    background: #353a3f;
+    }   
 }

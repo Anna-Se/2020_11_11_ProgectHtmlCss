@@ -1,13 +1,11 @@
 .aside {
     background-color: #282d32;
     flex: 0 0 150px;
+    grid-area: aside;
     padding: 5px;
-    width: 150px;
-    // max-height: 100%;
     text-align: center;
-    text-transform: uppercase; 
-    grid-area: aside;   
-
+    text-transform: uppercase;
+    width: 150px;
     @media (max-width: 799px) {
         align-items: center;
         display: flex;
@@ -17,16 +15,14 @@
         padding: 10px 20px;
         position: relative;
         width: auto;
-}
+    }
     .logo {
         color: #4cb480;
-        // line-height: 32px;
-        padding-top: 45px;
         font-family: "Poppins";
         font-size: 32px;
         margin-bottom: 68px;
+        padding-top: 45px;
         position: relative;
-
         @media(max-width: 799px) {
             margin-bottom: 0;
             padding-top: 0;
@@ -41,10 +37,6 @@
             position: absolute;
             transform: translateX(-50%);
             width: 25px;
-            // @media(max-width: 799px) {
-            //     display: none;
-            // }
         }
     }
-   
 }

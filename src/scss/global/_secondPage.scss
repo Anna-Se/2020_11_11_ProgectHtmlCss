@@ -1,52 +1,69 @@
 .content__item {
     display: flex;
     justify-content: space-between;
-    // padding-top: 5%;
-    &-secondPage {
-        display: flex;
-        position: relative;
+    @media (max-width: 999px) {  
         flex-direction: column;
+    }
+    &-secondPage {
         align-items: center;
-        // margin: 3% 5% 5.5% 0;
-        border-radius: 6px;
         background-color: #f6f6f6;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
         padding: 6.2em 3.2em 3.5em 3.2em;
+        position: relative;
+        @media (max-width: 1399px) {
+            padding: 10vh 5vh 5vh 5vh;  
+        }
+        @media (max-width: 799px) {
+            padding: 10vh 0vh 5vh 0vh;  
+        }
         &:not(:first-child), &:not(:last-child) {
-            margin: 3em 1.5em 5em 2em;
+             margin: 3em 1.5em 5em 2em;
+             @media (max-width: 1399px) {
+                 margin: 3em 1em 2em 1em;
+             }
         }
-        &:last-child {
-            margin-right: 3.4em;
-        }
-        &:first-child {
-            margin-left: 3.4em;
+        @media (min-width: 1399px) {
+            &:last-child {
+                margin-right: 3.4em;
+            }
+            &:first-child {
+                margin-left: 3.4em;
+            }
         }
         &--img {
-            display: block;
-            width: 110px;
-            height: 110px;
             background-color: #ffffff;
             border-radius: 50%;
+            display: block;
+            height: 110px;            
             position: absolute;
             transform: translateY(-140%);
+            width: 110px;
             &>svg {
                 fill: #4cb480;
-                position: absolute;
-                top: 50%;
+                height: 40px;
                 left: 50%;
                 margin-right: -50%;
+                position: absolute;
+                top: 50%;
                 transform: translate(-50%, -50%);
-                height: 40px;
                 width: 40px;
             }
         }
         &--text {
-            padding: 0.8em 0 1.7em 0;
             color: #5a5f65;
-            font-family: Poppins;
+            font-family: 'Poppins';
             font-size: 18px;
             line-height: 30px;
+            padding: 0.9em 0.05em 1.7em 0.04em;
             text-align: center;
+            @media (max-width: 799px) {
+                padding: 1em 2em 1em 2em;
+            }
         }
     }
-
+}
+@at-root .content__item-secondPage {
+    min-width: 205px;
 }

@@ -1,9 +1,11 @@
 .content__item-firstPage {
-    padding: 10em 14em 9.6em 16em;
-    @media (max-width: 1350px) {
-        padding: 10% 7vh;       
+    padding: 9.8em 14em 9.6em 16.1em;
+    @media (max-width: 1399px) {
+        padding: 5vh 14vh;       
     }
-
+    @media (max-width: 999px) {
+        padding: 5vh 5vh;  
+    }
     .subtitle{
         padding: 46px 0 18px 0;
     }
@@ -13,19 +15,19 @@
     }
     .title:before {
         background: #4cb480;
-        top: -27px;
         content: "";
         display: block;
         height: 4px;
         position: absolute;
+        top: -27px;
         width: 62px;
     }
 .h1__text {
-    opacity: 0.5;
     color: #ffffff;
     font-family: "Poppins";
-    font-size: 22px;
+    font-size: 22.1px;
     line-height: 36px;
-    text-align: left;
+    opacity: 0.5;
     padding-bottom: 47px;
+    text-align: left;
 }

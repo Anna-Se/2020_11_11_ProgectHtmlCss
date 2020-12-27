@@ -1,64 +1,46 @@
 .content__item-thirdPage {
+    background-image: url(/img/2-layers.png);
+    background-origin: border-box;
+    background-position: 49% 65%;
+    background-repeat: no-repeat;
+    padding: 4.4em 17em 4em 16em;
     position: relative;
-    margin: 8.3em 17em 4em 16em;
-    // background-image: url(/img/2-layers.png) repeat-y;
+    @media (max-width: 1399px) {
+        padding: 10vh 13vh;  
+    }
+    @media (max-width: 999px) {
+        padding: 5vh 5vh;  
+    }
+    @media (max-width: 699px) {
+        background-image: none;
+    }
+    img {
+        margin-bottom: 1.2em;
+    }
     &--words {
         color: #ffffff;
         font-size: 28px;
         font-style: italic;
+        letter-spacing: 0.25px;
         line-height: 38.02px;
-        letter-spacing: 0.25px; 
     }
     &--author {
-        width: 234px;
-        height: 42px;
         color: #8c9198;
         font-family: Poppins;
         font-size: 20px;
+        height: 42px;
         letter-spacing: 0.5px;
         padding: 3.9em 0 3em 0;
         position: relative;
+        width: 234px;
         &::before {
             background:#8c9198;
-            top: 54px;
             content: "";
             display: block;
             height: 5px;
             position: absolute;
+            top: 54px;
             width: 60px;
         }
     }
 }
-
-    // .content__item-marks {
-    //     display: block;
-    //     // font-family: "Poppins";
-    //     &_small>p {
-    //         display: block;
-    //         top: 50%;
-    //         left: 50%;
-    //         margin-right: -50%;
-    //         transform: translate(-50%, -50%);
-    //         height: 20px;
-    //         color: #ffffff;
-    //         opacity: 0.03;
-    //         height: 30px;
-    //         color: #4cb480;
-    //         letter-spacing: 3px;
-    //     }
-    //     &_large {
-    //         // display: block;
-    //         // top: 50%;
-    //         // left: 50%;
-    //         // margin-right: -50%;
-    //         // transform: translate(-50%, -50%);
-    //         // height: 20px;
-    //         // color: #ffffff;
-    //         // opacity: 0.03;
-    //         position: absolute;
-    //         height: 130px;
-    //         color: white;
-    //         letter-spacing: 3px;
-    //         z-index: 1;
-    //     }
-    // }
