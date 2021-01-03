@@ -55,7 +55,7 @@ table {
   margin: 0;
   max-width: 1600px;
   min-height: 100vh;
-  min-width: 399px; }
+  min-width: 450px; }
   @media (max-width: 799px) {
     .wrapper {
       grid-template-areas: "aside" "main__content";
@@ -108,14 +108,14 @@ body {
 
 .nav {
   font-size: 17px;
-  padding: 41px 0;
-  padding-top: 50px;
+  overflow: hidden;
+  padding: 44px 0 39px 0;
   position: relative;
   text-align: center; }
   @media (max-width: 799px) {
     .nav {
-      order: 3;
-      padding-top: 0;
+      order: 1;
+      padding: 0;
       position: static; } }
   .nav::before, .nav::after {
     background-color: white;
@@ -135,41 +135,104 @@ body {
     bottom: 18px;
     top: auto; }
   .nav--footer {
-    margin: -0.6em 0 -0.7em 0; }
+    margin: -0.85em 0 -0.7em 0; }
     .nav--footer::before, .nav--footer::after {
       display: none; }
   .nav--footer .nav__list {
     display: flex;
     flex-wrap: wrap;
+    font-size: 17px;
     justify-content: space-between;
-    width: 80.5%; }
+    max-height: 100px;
+    padding-top: 0;
+    position: relative;
+    width: 80%; }
+    @media (max-width: 799px) {
+      .nav--footer .nav__list {
+        margin: -1.85em 0 -0.7em 0; } }
     .nav--footer .nav__list li {
       padding: 0; }
+      @media (max-width: 1400px) {
+        .nav--footer .nav__list li {
+          font-size: 0.7em;
+          padding: 0.2em; } }
+  @media (max-width: 799px) {
+    .nav__list {
+      bottom: 0;
+      display: block;
+      font-size: 0;
+      left: 0;
+      max-height: 0;
+      overflow: hidden;
+      padding-top: 20px;
+      position: absolute;
+      transform: translateY(100%);
+      transition: 0.5s all;
+      width: 100%; } }
   .nav__list li {
-    padding-bottom: 21px; }
+    padding-bottom: 26px; }
   .nav__list a {
     color: #ffffff;
     font-family: 'Poppins';
     letter-spacing: 0.8px;
-    line-height: 30px;
+    line-height: 25px;
     text-decoration: none;
     text-transform: uppercase; }
-  .nav svg {
-    display: block;
-    fill: #fff; }
 
-.toggle-icon {
-  cursor: pointer;
+#toggle {
+  display: none;
+  position: relative; }
+
+.toggle-nav {
   display: none; }
   @media (max-width: 799px) {
-    .toggle-icon {
-      display: block; } }
+    .toggle-nav {
+      cursor: pointer;
+      display: block;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 85px;
+      z-index: 1; } }
 
-.toggle-button {
-  display: none;
-  height: 0;
-  visibility: hidden;
-  width: 0; }
+.burger-line {
+  display: none; }
+  @media (max-width: 799px) {
+    .burger-line {
+      background-color: white;
+      display: block;
+      height: 2px;
+      position: absolute;
+      right: 20px;
+      top: 25px;
+      width: 40px; } }
+
+.second-line, .third-line {
+  top: 37.5px; }
+
+.fourth-line {
+  top: 50px; }
+
+#toggle:checked ~ .nav__list {
+  background-color: #282d32;
+  font-size: 100%;
+  max-height: 400px;
+  z-index: 1; }
+
+#toggle:checked ~ .first-line {
+  display: none; }
+
+#toggle:checked ~ .second-line {
+  transform: rotate(-45deg);
+  transition: 0.5s all; }
+
+#toggle:checked ~ .third-line {
+  transform: rotate(45deg);
+  transition: 0.5s all; }
+
+#toggle:checked ~ .fourth-line {
+  display: none; }
 
 .main__content {
   flex-direction: column;
@@ -213,7 +276,7 @@ body {
 .h1__text {
   color: #ffffff;
   font-family: "Poppins";
-  font-size: 22.1px;
+  font-size: 18.5px;
   line-height: 36px;
   opacity: 0.5;
   padding-bottom: 47px;
@@ -402,15 +465,22 @@ body {
   @media (max-width: 799px) {
     .footer-wrap {
       grid-template-areas: "nav icons" "copywrite";
-      margin: -2em 1em -1em 0em; } }
+      margin: -2em -2em -1em -2em; } }
+  @media (max-width: 799px) {
+    .footer-wrap {
+      grid-template-areas: "nav" "copywrite icons";
+      margin: -2em -2em -1em -2em; } }
 
 .footer-copywrite {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 12.4px;
   grid-area: copywrite;
-  line-height: 30px;
+  line-height: 34px;
   margin: -1.7em 0 0 0em;
   opacity: 0.3; }
+  @media (max-width: 454px) {
+    .footer-copywrite {
+      line-height: 16px; } }
 
 .footer-nav {
   grid-area: nav; }
@@ -424,8 +494,8 @@ body {
   .social-icon > ul > li {
     color: #ffffff;
     height: 30px;
-    padding: 0 2em 0 1.6em;
     opacity: 0.3;
+    padding: 0 2em 0 1.6em;
     width: 30px; }
 
 .button_large {
@@ -488,7 +558,8 @@ h3 {
 .search-icon svg {
   fill: white;
   height: 28px;
-  width: 28px; }
+  width: 28px;
+  cursor: pointer; }
   @media (max-width: 799px) {
     .search-icon svg {
       display: block;
