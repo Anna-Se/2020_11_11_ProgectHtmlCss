@@ -52,7 +52,7 @@ table {
   grid-template-columns: 150px 1fr;
   grid-template-rows: 1fr;
   justify-content: space-between;
-  margin: 0;
+  margin: auto;
   max-width: 1600px;
   min-height: 100vh;
   min-width: 450px; }
@@ -369,7 +369,7 @@ body {
     line-height: 38.02px; }
   .content__item-thirdPage--author {
     color: #8c9198;
-    font-family: Poppins;
+    font-family: "Poppins", 'Arial', sans-serif;
     font-size: 20px;
     height: 42px;
     letter-spacing: 0.5px;
@@ -556,10 +556,10 @@ h3 {
       padding: 0; } }
 
 .search-icon svg {
+  cursor: pointer;
   fill: white;
   height: 28px;
-  width: 28px;
-  cursor: pointer; }
+  width: 28px; }
   @media (max-width: 799px) {
     .search-icon svg {
       display: block;
