@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "cssnano": "^4.1.10",
